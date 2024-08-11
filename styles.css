@@ -48,7 +48,7 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-image: url('images/madera1.jpg');
+    background-image: url('images/fondo\ medieval\ 1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -137,7 +137,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     min-height: 100vh;
-    background-image: url('images/madera1.jpg');
+    background-image: url('images/fondo\ medieval\ 2.jpg');
     /* Mismo fondo que en la página principal */
     background-size: cover;
     background-position: center;
