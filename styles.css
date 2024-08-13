@@ -12,15 +12,16 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 20px;
+    padding: 40px 50px;
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
     color: #d7ec16;
-    background-color: #B22222;
+    background-color: #03185c;
+    /* Mismo color de fondo */
     border: 5px solid #e1e432;
     font-family: "Monotype Corsiva", "Comic Sans MS", cursive;
     z-index: 2;
-    max-width: 90%;
+    max-width: 80%;
     white-space: nowrap;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
@@ -31,6 +32,28 @@ body {
     background-color: #e1e432;
     color: #B22222;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el Texto de los Círculos */
+.marco p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d7ec16;
+    background-color: #03185c;
+    /* Mismo color de fondo */
+    border: 3px solid #e1e432;
+    padding: 5px 10px;
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.marco p:hover {
+    background-color: #e1e432;
+    color: #B22222;
 }
 
 /* Estilos para la Página Principal */
@@ -86,27 +109,21 @@ body {
     object-fit: cover;
 }
 
-.marco p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+/* Estilos para las Páginas Internas */
+.pagina-interna h1 {
+    font-size: 40px;
+    /* Tamaño del título en las páginas internas */
     color: #d7ec16;
-    background-color: #B22222;
-    border: 3px solid #e1e432;
-    padding: 5px 10px;
-    display: inline-block;
+    background-color: #03185c;
+    /* Mismo color de fondo */
+    border: 5px solid #e1e432;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 40px;
 }
 
-.marco p:hover {
-    background-color: #e1e432;
-    color: #B22222;
-}
-
-/* Estilos para las Páginas Internas */
 .pagina-interna {
     display: flex;
     flex-direction: column;
