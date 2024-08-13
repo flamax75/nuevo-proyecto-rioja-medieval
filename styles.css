@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    height: 100%;
 }
 
 /* Estilos para el Título de la Página Principal */
@@ -39,12 +40,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100%;
     background-image: url('images/fondo\ medieval\ 1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 220px 20px 120px;
     box-sizing: border-box;
+    padding: 220px 20px 120px;
 }
 
 .fila {
@@ -111,6 +113,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     min-height: 100vh;
+    height: 100%;
     background-image: url('images/fondo\ medieval\ 2.jpg');
     background-size: cover;
     background-position: center;
@@ -138,9 +141,19 @@ body {
 
 /* Ajustes Responsivos */
 @media (max-width: 768px) {
+    .inicio {
+        padding: 120px 10px;
+    }
+
+    .fila {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
     .marco {
         width: 170px;
         height: 170px;
+        margin: 30px 0;
     }
 
     .marco p {
@@ -166,6 +179,7 @@ body {
     .marco {
         width: 150px;
         height: 150px;
+        margin: 40px 0;
     }
 
     .marco p {
