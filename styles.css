@@ -123,8 +123,14 @@ body {
     text-align: center;
 }
 
+/* Contenedor del botón de volver */
+.boton-volver-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .boton-volver {
-    margin-bottom: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -137,6 +143,31 @@ body {
 
 .boton-volver:hover {
     background-color: #A0522D;
+}
+
+/* Galería tipo "Masonry" */
+.galeria {
+    column-count: 3;
+    /* Número de columnas */
+    column-gap: 10px;
+    /* Espacio entre columnas */
+    padding: 20px;
+    background-color: #fff;
+}
+
+.galeria img {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    /* Evita que se rompan las imágenes entre columnas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    /* Zoom suave al pasar el ratón por encima */
 }
 
 /* Ajustes Responsivos */
@@ -158,6 +189,11 @@ body {
 
     .marco p {
         font-size: 14px;
+    }
+
+    .galeria {
+        column-count: 2;
+        /* Reduce el número de columnas en pantallas más pequeñas */
     }
 
     .titulo-pagina {
@@ -184,6 +220,11 @@ body {
 
     .marco p {
         font-size: 12px;
+    }
+
+    .galeria {
+        column-count: 1;
+        /* Una sola columna en pantallas muy pequeñas */
     }
 
     .titulo-pagina {
