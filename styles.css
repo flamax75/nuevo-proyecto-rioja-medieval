@@ -106,14 +106,10 @@ body {
     color: #B22222;
 }
 
-/* Estilos para las Páginas Internas */
-/* Ocultar completamente los cuadros y textos de las páginas internas */
-.pagina-interna h1,
-.pagina-interna p {
-    display: none;
-    /* Oculta los textos y los títulos */
-}
+/* Eliminar los títulos de las páginas internas (excepto la página principal) */
+/* Simplemente no los incluyas en las páginas internas de tu HTML */
 
+/* Estilos para las Páginas Internas */
 .pagina-interna {
     display: flex;
     flex-direction: column;
@@ -132,14 +128,46 @@ body {
 
 /* Sección Sobre Nosotros */
 .sobre-nosotros {
-    display: none;
-    /* Oculta la sección "Sobre Nosotros" completamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contenido-central {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Contenedor del botón de volver */
 .boton-volver-container {
-    display: none;
-    /* Oculta el botón de volver */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-volver {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #8B4513;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+    background-color: #A0522D;
 }
 
 /* Galería tipo "Masonry" */
