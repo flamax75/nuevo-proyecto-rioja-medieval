@@ -15,38 +15,29 @@ body {
     text-align: center;
     font-size: 36px;
     color: #d7ec16;
-    /* Texto en color amarillo verdoso */
     background-color: #B22222;
-    /* Fondo rojo */
     border: 5px solid #e1e432;
-    /* Borde amarillo claro */
     font-family: "Monotype Corsiva", "Comic Sans MS", cursive;
     z-index: 2;
     max-width: 90%;
     white-space: nowrap;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    /* Sombra para el rectángulo */
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
-    /* Sombra para el texto */
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    /* Transición para el hover */
 }
 
 .titulo-pagina:hover {
     background-color: #e1e432;
-    /* Cambia el fondo al amarillo claro al pasar el ratón */
     color: #B22222;
-    /* Cambia el texto a rojo al pasar el ratón */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    /* Intensifica la sombra en hover */
 }
 
 /* Estilos para la Página Principal */
 .inicio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
     min-height: 100vh;
     background-image: url('images/fondo\ medieval\ 1.jpg');
     background-size: cover;
@@ -56,39 +47,34 @@ body {
     box-sizing: border-box;
 }
 
-.marcos {
+.fila {
     display: flex;
-    justify-content: space-between;
-    /* Asegura espacio entre los elementos */
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 1200px;
-    /* Ajusta según necesites para la distribución */
-    position: relative;
+    margin-bottom: 30px;
+}
+
+.fila:last-child {
+    margin-bottom: 0;
 }
 
 .marco {
-    width: 150px;
-    /* Ajusta el tamaño de los círculos */
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #e1e432;
-    /* Cambia el borde al color amarillo claro */
     text-align: center;
-    margin: 30px 20px;
-    /* Aumenta el espacio entre los círculos */
+    margin: 20px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Fondo blanco semitransparente */
     z-index: 1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Transiciones suaves para el hover */
 }
 
 .marco:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
-    /* Efecto de agrandamiento en hover */
 }
 
 .marco img {
@@ -101,33 +87,21 @@ body {
 .marco p {
     margin-top: 10px;
     font-size: 16px;
-    /* Ajusta el tamaño del texto para acompañar el tamaño del círculo */
     font-weight: bold;
     color: #d7ec16;
-    /* Mismo color de texto que el título */
     background-color: #B22222;
-    /* Fondo rojo */
     border: 3px solid #e1e432;
-    /* Borde amarillo claro */
     padding: 5px 10px;
-    /* Espaciado dentro del marco */
     display: inline-block;
-    /* Permite ajustar el tamaño del marco al texto */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    /* Sombra para el marco del texto */
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
-    /* Sombra para el texto */
     border-radius: 5px;
-    /* Esquinas redondeadas */
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Transición suave para el hover */
 }
 
 .marco p:hover {
     background-color: #e1e432;
-    /* Cambia el fondo al amarillo claro al pasar el ratón */
     color: #B22222;
-    /* Cambia el texto a rojo al pasar el ratón */
 }
 
 /* Estilos para las Páginas Internas */
@@ -138,11 +112,9 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url('images/fondo\ medieval\ 2.jpg');
-    /* Mismo fondo que en la página principal */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* Fija la imagen de fondo */
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
@@ -162,32 +134,22 @@ body {
 
 .boton-volver:hover {
     background-color: #A0522D;
-    /* Color de fondo más claro en hover */
 }
 
 /* Ajustes Responsivos */
 @media (max-width: 768px) {
     .marco {
-        width: 120px;
-        height: 120px;
-        margin: 50px 30px;
-        /* Aumenta el espacio vertical y lateral entre los círculos */
+        width: 170px;
+        height: 170px;
     }
 
     .marco p {
         font-size: 14px;
     }
 
-    .inicio {
-        padding: 120px 10px;
-        /* Aumenta el padding en móviles para mayor separación */
-    }
-
     .titulo-pagina {
         font-size: 28px;
-        /* Reduce el tamaño del título en móviles */
         padding: 8px 15px;
-        /* Ajusta el padding del título en móviles */
     }
 
     .pagina-interna {
@@ -202,26 +164,17 @@ body {
 
 @media (max-width: 480px) {
     .marco {
-        width: 100px;
-        height: 100px;
-        margin: 60px 30px;
-        /* Aumenta el espacio vertical y lateral en pantallas pequeñas */
+        width: 150px;
+        height: 150px;
     }
 
     .marco p {
         font-size: 12px;
     }
 
-    .inicio {
-        padding: 100px 5px;
-        /* Aumenta el padding en pantallas muy pequeñas para mayor separación */
-    }
-
     .titulo-pagina {
         font-size: 24px;
-        /* Reduce más el tamaño del título en pantallas muy pequeñas */
         padding: 6px 10px;
-        /* Ajusta el padding del título en pantallas muy pequeñas */
     }
 
     .pagina-interna {
