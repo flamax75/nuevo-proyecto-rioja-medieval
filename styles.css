@@ -45,6 +45,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    /* Fondo fijo en dispositivos no móviles */
     box-sizing: border-box;
     padding: 220px 20px 120px;
 }
@@ -198,6 +199,8 @@ body {
 /* Ajustes Responsivos */
 @media (max-width: 768px) {
     .inicio {
+        background-attachment: scroll;
+        /* Hace que el fondo se mueva con el contenido en dispositivos móviles */
         padding: 120px 10px;
     }
 
@@ -237,6 +240,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .inicio {
+        background-attachment: scroll;
+        /* Asegura que el fondo se mueva en pantallas muy pequeñas */
+    }
+
     .marco {
         width: 150px;
         height: 150px;
