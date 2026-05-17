@@ -51,7 +51,7 @@ document.querySelectorAll([
 });
 
 // Animación de títulos: divide los grandes titulares en letras con entradas alternas.
-const animatedTitles = document.querySelectorAll('.hero-content h1, .page-hero-content h1, .section-heading h2, .cta-section h2');
+const animatedTitles = document.querySelectorAll('.page-hero-content h1, .section-heading h2, .cta-section h2');
 
 if (!prefersReducedMotion) {
     const directions = [
@@ -68,17 +68,35 @@ if (!prefersReducedMotion) {
         title.classList.add('title-animate');
         title.textContent = '';
 
-        Array.from(originalText).forEach((character, index) => {
-            const span = document.createElement('span');
-            const direction = directions[index % directions.length];
+        originalText.split(' ').forEach((word, wordIndex, words) => {
+            const wordSpan = document.createElement('span');
 
-            span.setAttribute('aria-hidden', 'true');
-            span.className = character === ' ' ? 'title-letter title-space' : 'title-letter';
-            span.textContent = character === ' ' ? '\u00a0' : character;
-            span.style.setProperty('--i', index);
-            span.style.setProperty('--from-x', direction.x);
-            span.style.setProperty('--from-y', direction.y);
-            title.appendChild(span);
+            wordSpan.className = 'title-word';
+            wordSpan.setAttribute('aria-hidden', 'true');
+
+            Array.from(word).forEach((character) => {
+                const span = document.createElement('span');
+                const index = title.querySelectorAll('.title-letter').length;
+                const direction = directions[index % directions.length];
+
+                span.className = 'title-letter';
+                span.textContent = character;
+                span.style.setProperty('--i', index);
+                span.style.setProperty('--from-x', direction.x);
+                span.style.setProperty('--from-y', direction.y);
+                wordSpan.appendChild(span);
+            });
+
+            title.appendChild(wordSpan);
+
+            if (wordIndex < words.length - 1) {
+                const space = document.createElement('span');
+
+                space.className = 'title-space';
+                space.setAttribute('aria-hidden', 'true');
+                space.textContent = ' ';
+                title.appendChild(space);
+            }
         });
     });
 } else {
