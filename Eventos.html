@@ -4,14 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Eventos | Asociación Rioja Medieval</title>
+    <meta name="description" content="Próximos eventos, ferias, mercados medievales, exhibiciones y actividades históricas de Asociación Rioja Medieval.">
+    <meta property="og:title" content="Eventos | Asociación Rioja Medieval">
+    <meta property="og:description" content="Ferias, exhibiciones, jornadas culturales y eventos históricos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/foto7.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="pagina-interna">
-        <button onclick="location.href='index.html'">Volver</button>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Asociación Rioja Medieval">
+            <img class="brand-mark" src="images/logo rioja medieval.jpg" alt="Logo de Asociación Rioja Medieval">
+            <span class="brand-text">Rioja Medieval</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="Quien somos.html">Quiénes somos</a>
+            <a href="Luchadores.html">Luchadores</a>
+            <a href="Eventos.html" aria-current="page">Eventos</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="Contactanos.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero events-hero">
+            <div class="page-hero-content reveal">
+                <p class="eyebrow">Agenda cultural</p>
+                <h1>Eventos</h1>
+                <p>Mercados medievales, exhibiciones, campamentos históricos y actividades de divulgación.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Próximos eventos</p>
+                <h2>Tarjetas preparadas para actualizar la agenda</h2>
+            </div>
+            <div class="event-list">
+                <article class="event-card reveal">
+                    <span class="event-date">Por confirmar</span>
+                    <div>
+                        <h2>Exhibición de combate medieval</h2>
+                        <p>Demostración de armaduras, armas regladas, técnicas de Buhurt y explicación abierta al público.</p>
+                    </div>
+                    <a class="text-link" href="Contactanos.html">Solicitar información</a>
+                </article>
+                <article class="event-card reveal">
+                    <span class="event-date">Por confirmar</span>
+                    <div>
+                        <h2>Campamento de recreación histórica</h2>
+                        <p>Vida de campamento, indumentaria, exposición de materiales y actividades de divulgación medieval.</p>
+                    </div>
+                    <a class="text-link" href="Contactanos.html">Proponer evento</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section parchment">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Eventos históricos</p>
+                <h2>Trayectoria de participación</h2>
+            </div>
+            <div class="card-grid three">
+                <article class="info-card reveal">
+                    <h2>Mercados medievales</h2>
+                    <p>Agoncillo, Arnedo, Cornago, Olite, Burgos, Soria, Navarra, Zaragoza y otras localidades han acogido actividades de la asociación.</p>
+                </article>
+                <article class="info-card reveal">
+                    <h2>Expohistórica y jornadas</h2>
+                    <p>Participación en encuentros de historia viva, campamentos divulgativos, actividades educativas y exposiciones de material.</p>
+                </article>
+                <article class="info-card reveal">
+                    <h2>Combate internacional</h2>
+                    <p>Miembros vinculados al Buhurt han participado en campeonatos y encuentros nacionales e internacionales de combate medieval.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Asociación Rioja Medieval · Eventos culturales y exhibiciones</p>
+        <p class="footer-credit">Derechos reservados <a href="https://flamaxmedia.es" target="_blank" rel="noopener">Flamax Media</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

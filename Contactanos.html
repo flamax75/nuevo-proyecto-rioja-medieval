@@ -4,14 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Contacto | Asociación Rioja Medieval</title>
+    <meta name="description" content="Contacta con Asociación Rioja Medieval para participar, solicitar exhibiciones, eventos culturales o información sobre recreación histórica y Buhurt.">
+    <meta property="og:title" content="Contacto | Asociación Rioja Medieval">
+    <meta property="og:description" content="Participa, solicita una exhibición o habla con la asociación.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/foto12.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="pagina-interna">
-        <button onclick="location.href='index.html'">Volver</button>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Asociación Rioja Medieval">
+            <img class="brand-mark" src="images/logo rioja medieval.jpg" alt="Logo de Asociación Rioja Medieval">
+            <span class="brand-text">Rioja Medieval</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="Quien somos.html">Quiénes somos</a>
+            <a href="Luchadores.html">Luchadores</a>
+            <a href="Eventos.html">Eventos</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="Contactanos.html" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="page-hero-content reveal">
+                <p class="eyebrow">Participa</p>
+                <h1>Contacto</h1>
+                <p>Escríbenos para unirte, solicitar una exhibición o proponer una actividad cultural.</p>
+            </div>
+        </section>
+
+        <section class="section contact-layout">
+            <div class="contact-panel reveal">
+                <p class="eyebrow">Hablemos</p>
+                <h2>Rioja Medieval está abierta a nuevas propuestas</h2>
+                <p>Buscamos personas con interés por la historia, el combate medieval, la divulgación, la artesanía, la fotografía, el montaje de campamentos y la organización de eventos.</p>
+                <div class="contact-links">
+                    <a class="btn btn-primary" href="https://www.facebook.com/search/top?q=Asociaci%C3%B3n%20Rioja%20Medieval" target="_blank" rel="noopener">Facebook</a>
+                    <a class="btn" href="Eventos.html">Solicitar exhibición</a>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name">
+
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email">
+
+                <label for="motivo">Motivo</label>
+                <select id="motivo" name="motivo">
+                    <option>Quiero unirme a la asociación</option>
+                    <option>Quiero solicitar una exhibición</option>
+                    <option>Propongo un evento cultural</option>
+                    <option>Consulta general</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntanos qué necesitas"></textarea>
+
+                <button class="btn btn-primary" type="submit">Preparado para enviar</button>
+                <p class="form-note">Formulario visual preparado para conectar con un backend en el futuro.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Asociación Rioja Medieval · Contacto y participación</p>
+        <p class="footer-credit">Derechos reservados <a href="https://flamaxmedia.es" target="_blank" rel="noopener">Flamax Media</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

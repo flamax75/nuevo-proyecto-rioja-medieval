@@ -4,41 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
+    <title>Asociación Rioja Medieval | Recreación histórica y Buhurt en La Rioja</title>
+    <meta name="description" content="Asociación Rioja Medieval: recreación histórica, combate medieval Buhurt, eventos culturales y divulgación de la Edad Media desde La Rioja.">
+    <meta property="og:title" content="Asociación Rioja Medieval">
+    <meta property="og:description" content="Recreación histórica, combate medieval y cultura viva desde La Rioja.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/foto1.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Título de la Página -->
-    <h1 class="titulo-pagina">~Asociacion~Rioja~Medieval~</h1>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Asociación Rioja Medieval">
+            <img class="brand-mark" src="images/logo rioja medieval.jpg" alt="Logo de Asociación Rioja Medieval">
+            <span class="brand-text">Rioja Medieval</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="Quien somos.html">Quiénes somos</a>
+            <a href="Luchadores.html">Luchadores</a>
+            <a href="Eventos.html">Eventos</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="Contactanos.html">Contacto</a>
+        </nav>
+    </header>
 
-    <!-- Página de Inicio -->
-    <div class="inicio">
-        <div class="fila">
-            <div class="marco" onclick="location.href='Quien somos.html'">
-                <img src="images/foto1.jpg" alt="Foto 1">
-                <p>Quien somos</p>
+    <main>
+        <section class="hero hero-home">
+            <div class="hero-content reveal">
+                <img class="hero-emblem" src="images/logo rioja medieval.jpg" alt="Escudo de Asociación Rioja Medieval">
+                <p class="eyebrow">La Rioja · Historia viva</p>
+                <h1>Asociación Rioja Medieval</h1>
+                <p class="hero-subtitle">Recreación histórica, combate medieval y cultura viva desde La Rioja</p>
+                <div class="hero-actions" aria-label="Accesos principales">
+                    <a class="btn btn-primary" href="Quien somos.html">Quiénes somos</a>
+                    <a class="btn" href="Luchadores.html">Luchadores</a>
+                    <a class="btn" href="Eventos.html">Eventos</a>
+                    <a class="btn" href="Galeria.html">Galería</a>
+                    <a class="btn" href="Contactanos.html">Contacto</a>
+                </div>
             </div>
-            <div class="marco" onclick="location.href='Luchadores.html'">
-                <img src="images/foto2.jpg" alt="Foto 2">
-                <p>Luchadores</p>
+        </section>
+
+        <section class="section parchment intro-grid">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Asociación cultural</p>
+                <h2>Un proyecto dedicado a comprender, representar y compartir la Edad Media</h2>
             </div>
-            <div class="marco" onclick="location.href='Eventos.html'">
-                <img src="images/foto3.jpg" alt="Foto 3">
-                <p>Eventos</p>
+            <div class="lead-panel reveal">
+                <p>Rioja Medieval reúne a personas interesadas en la recreación histórica, la divulgación cultural y el combate medieval deportivo. Su actividad combina investigación, presencia escénica, vida de campamento, armamento histórico, indumentaria y exhibiciones abiertas al público.</p>
+                <p>Desde La Rioja, la asociación participa en ferias, mercados medievales, jornadas históricas, actividades educativas y encuentros de combate Buhurt, cuidando tanto el rigor histórico como la seguridad de cada demostración.</p>
             </div>
-        </div>
-        <div class="fila">
-            <div class="marco" onclick="location.href='Galeria.html'">
-                <img src="images/foto4.jpg" alt="Foto 4">
-                <p>Galeria</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading centered reveal">
+                <p class="eyebrow">Qué hacemos</p>
+                <h2>Historia, acero y divulgación</h2>
             </div>
-            <div class="marco" onclick="location.href='Contactanos.html'">
-                <img src="images/foto7.jpg" alt="Foto 5">
-                <p>Contactanos</p>
+            <div class="card-grid three">
+                <article class="feature-card reveal">
+                    <img src="images/foto4.jpg" alt="Recreadores medievales durante una actividad histórica">
+                    <div>
+                        <h3>Recreación histórica</h3>
+                        <p>Campamentos, vestimenta, armas, oficios, vida cotidiana y escenas documentadas para acercar el periodo medieval al público actual.</p>
+                    </div>
+                </article>
+                <article class="feature-card reveal">
+                    <img src="images/foto2.jpg" alt="Luchador con armadura preparado para combate medieval">
+                    <div>
+                        <h3>Combate medieval / Buhurt</h3>
+                        <p>Entrenamiento, disciplina, armaduras reales y combate deportivo reglado con prioridad absoluta en la seguridad.</p>
+                    </div>
+                </article>
+                <article class="feature-card reveal">
+                    <img src="images/foto7.jpg" alt="Exhibición cultural medieval ante visitantes">
+                    <div>
+                        <h3>Eventos y exhibiciones</h3>
+                        <p>Participación en mercados, ferias, jornadas culturales, charlas, demostraciones y actividades para instituciones.</p>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="image-stack reveal">
+                <img src="images/foto1.jpg" alt="Grupo de Rioja Medieval en una recreación histórica">
+                <img src="images/foto3.jpg" alt="Detalle de atuendo medieval y equipamiento de recreación">
+            </div>
+            <div class="copy-block reveal">
+                <p class="eyebrow">Cultura viva</p>
+                <h2>Divulgación con presencia, oficio y respeto por el pasado</h2>
+                <p>La asociación trabaja la Edad Media como una experiencia cercana: el visitante ve, pregunta, toca materiales, entiende el peso de una armadura y descubre cómo se organizaba un campamento histórico.</p>
+                <a class="text-link" href="Quien somos.html">Conocer la trayectoria</a>
+            </div>
+        </section>
+
+        <section class="section gallery-preview">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Galería destacada</p>
+                <h2>Instantes de recreación, combate y campamento</h2>
+            </div>
+            <div class="gallery-strip reveal">
+                <img src="images/foto8.jpg" alt="Escena destacada de recreación medieval en La Rioja">
+                <img src="images/foto12.jpg" alt="Participantes con indumentaria medieval en un evento">
+                <img src="images/foto20.jpg" alt="Detalle de exhibición medieval con público">
+                <img src="images/foto31.jpg" alt="Actividad de Rioja Medieval durante una feria histórica">
+            </div>
+            <a class="btn btn-primary reveal" href="Galeria.html">Ver galería completa</a>
+        </section>
+
+        <section class="section cta-section reveal">
+            <p class="eyebrow">Únete</p>
+            <h2>Forma parte de Rioja Medieval</h2>
+            <p>Si te interesan la historia, el combate medieval, la artesanía, la divulgación o los eventos culturales, hay un lugar para participar y aprender.</p>
+            <a class="btn btn-primary" href="Contactanos.html">Contactar con la asociación</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Asociación Rioja Medieval · Recreación histórica y Buhurt en La Rioja</p>
+        <p class="footer-credit">Derechos reservados <a href="https://flamaxmedia.es" target="_blank" rel="noopener">Flamax Media</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -4,14 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1</title>
+    <title>Luchadores y Buhurt | Asociación Rioja Medieval</title>
+    <meta name="description" content="Combate medieval Buhurt en Asociación Rioja Medieval: entrenamiento, armaduras, disciplina, seguridad y exhibiciones.">
+    <meta property="og:title" content="Luchadores y Buhurt | Asociación Rioja Medieval">
+    <meta property="og:description" content="Entrenamiento, armaduras y combate medieval deportivo con seguridad.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/foto2.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="pagina-interna">
-        <button onclick="location.href='index.html'">Volver</button>
-    </div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Asociación Rioja Medieval">
+            <img class="brand-mark" src="images/logo rioja medieval.jpg" alt="Logo de Asociación Rioja Medieval">
+            <span class="brand-text">Rioja Medieval</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="Quien somos.html">Quiénes somos</a>
+            <a href="Luchadores.html" aria-current="page">Luchadores</a>
+            <a href="Eventos.html">Eventos</a>
+            <a href="Galeria.html">Galería</a>
+            <a href="Contactanos.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero fighters-hero">
+            <div class="page-hero-content reveal">
+                <p class="eyebrow">Combate medieval deportivo</p>
+                <h1>Luchadores y Buhurt</h1>
+                <p>Acero, técnica, preparación física y disciplina dentro de un deporte reglado y exigente.</p>
+            </div>
+        </section>
+
+        <section class="section parchment intro-grid">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Buhurt</p>
+                <h2>Combate con armadura histórica y reglas deportivas</h2>
+            </div>
+            <div class="lead-panel reveal">
+                <p>El Buhurt es una modalidad de combate medieval deportivo en la que los luchadores emplean armaduras y armas adaptadas a reglamento. No es teatro: requiere entrenamiento físico, técnica, control, trabajo en equipo y conocimiento del equipo histórico.</p>
+                <p>Las exhibiciones permiten al público entender cómo se mueve una persona armada, qué peso soporta, cómo se protege y qué diferencias existen entre recreación, demostración y competición.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="card-grid four">
+                <article class="info-card reveal">
+                    <h2>Entrenamiento</h2>
+                    <p>Preparación física, movilidad con armadura, técnica de golpeo, agarres, derribos, resistencia y coordinación de equipo.</p>
+                </article>
+                <article class="info-card reveal">
+                    <h2>Armaduras</h2>
+                    <p>Uso de protecciones completas, revisión del equipo, ajuste de piezas y mantenimiento constante para combatir con seguridad.</p>
+                </article>
+                <article class="info-card reveal">
+                    <h2>Disciplina</h2>
+                    <p>El combate exige respeto por el rival, control emocional, conocimiento del reglamento y compromiso con el grupo.</p>
+                </article>
+                <article class="info-card reveal">
+                    <h2>Seguridad</h2>
+                    <p>Las prácticas y exhibiciones se realizan con protocolos, supervisión, equipamiento adecuado y criterios claros de participación.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="image-frame reveal">
+                <img src="images/foto6.jpg" alt="Combatiente de Buhurt equipado con armadura medieval">
+            </div>
+            <div class="copy-block reveal">
+                <p class="eyebrow">Exhibiciones</p>
+                <h2>Una forma directa de explicar la guerra medieval</h2>
+                <p>En ferias y jornadas culturales, los luchadores muestran armaduras, armas, posiciones de combate y dinámicas regladas. El objetivo es que el público vea la parte física del periodo medieval sin perder el contexto histórico.</p>
+                <a class="text-link" href="Eventos.html">Ver eventos y exhibiciones</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Asociación Rioja Medieval · Combate medieval Buhurt</p>
+        <p class="footer-credit">Derechos reservados <a href="https://flamaxmedia.es" target="_blank" rel="noopener">Flamax Media</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
