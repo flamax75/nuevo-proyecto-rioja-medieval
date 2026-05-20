@@ -39,6 +39,41 @@ body.nav-open {
     overflow: hidden;
 }
 
+/* Bloque temporal para ocultar la web completa. Quitar este bloque para publicar de nuevo. */
+body {
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    z-index: 9999;
+}
+
+body::before {
+    content: "";
+    inset: 0;
+    background: #120f0d;
+}
+
+body::after {
+    content: "Pagina en mantenimiento";
+    top: 50%;
+    left: 50%;
+    width: min(90vw, 420px);
+    padding: 1.4rem 1.6rem;
+    border: 1px solid rgba(226, 207, 146, 0.65);
+    color: var(--gold-soft);
+    background: rgba(31, 28, 23, 0.96);
+    box-shadow: var(--shadow);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+}
+
 img {
     display: block;
     max-width: 100%;
